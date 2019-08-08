@@ -1,18 +1,8 @@
-defmodule Instacook.Aggregator do
+defmodule Instacart.Aggregator.AggregateRoot do
   @moduledoc """
-  Documentation for Instacook.Aggregator.
+  This module contains the aggregate root for recipes, shopping cart, 
+  and cooking videos. The aggregate root is a place where commands
+  are sent in order that the app does something.
   """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Instacook.Aggregator.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  
 end
