@@ -18,4 +18,6 @@ defmodule Instacart.Aggregator.AggregateRoot do
   alias Instacart.Events.{
 
   }
+
+  alias Instacart.Aggregator.AggregateRoot
 end
