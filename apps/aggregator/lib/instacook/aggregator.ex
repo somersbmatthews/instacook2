@@ -10,4 +10,12 @@ defmodule Instacart.Aggregator.AggregateRoot do
     recipe_id: nil,
     user_name: nil
   ]
+
+  alias Instacart.Commands.{
+
+  }
+
+  alias Instacart.Events.{
+
+  }
 end
