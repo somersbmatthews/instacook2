@@ -20,4 +20,12 @@ defmodule Instacart.Aggregator.AggregateRoot do
   }
 
   alias Instacart.Aggregator.AggregateRoot
+
+  @doc """
+  Create a new recipe
+  """
+
+  def create_recipe, create_recipe)
+
+  def create_recipe_state: nil}
 end
