@@ -32,5 +32,7 @@ defmodule Instacart.Aggregator.AggregateRoot do
       recipe_uuid: create_recipe.recipe.uuid,
       name: create_recipe.name
     }
+
+  def create_recipe(%Recipe{}, %CreateRecipe{}), do: {:error, :recipe_already_created}
   end
 end
