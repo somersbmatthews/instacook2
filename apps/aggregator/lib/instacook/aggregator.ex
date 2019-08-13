@@ -7,7 +7,7 @@ defmodule Instacart.Aggregator.AggregateRoot do
   # This struct contains variables that contain information important for
   # commands and events in the Instacook app.
   defstruct [
-    recipe_id: nil,
+    recipe_uuid: nil,
     user_name: nil
   ]
 
@@ -25,7 +25,12 @@ defmodule Instacart.Aggregator.AggregateRoot do
   Create a new recipe
   """
 
-  def create_recipe, create_recipe)
+  def create_recipe(recipe, create_recipe)
 
-  def create_recipe_state: nil}
+  def create_recipe(%Challenge{recipe_state: nil}, %CreateRecipe{} = create_recipe) do
+    %RecipeCreated{
+      recipe_uuid: create_recipe.recipe.uuid,
+      name: create_recipe.name
+    }
+  end
 end
